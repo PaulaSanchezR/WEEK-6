@@ -17,16 +17,21 @@ function drawBackground(){
 
 const fireballImg = new Image();
 const supermanImg = new Image();
-
+const landscape = new Image();
 // "src" has has to point as the image is used in HTML file
 fireballImg.src = "./images/fireball.png";
 supermanImg.src = "./images/superman.png";
+landscape.src = "./images/landscape.png";
 
 let fireballX = 800;
 let fireballY = 200;
 
 let supermanX = 0;
 let supermanY = 200;
+
+let landscapeX = 0;
+let landscapeY = 250;
+
 
 
 // fireballImg.onload = function(){
@@ -88,6 +93,7 @@ function drawingLoop(){
 
     // ctx.drawImage(whichImage, x, y, width, height);
     ctx.drawImage(supermanImg, supermanX, supermanY, 150, 150);
+    ctx.drawImage(landscape, landscapeX, landscapeY, 1000, 250);
 
 
     // re-draw the whole sceen
